@@ -1,1 +1,9 @@
-<p>cart works!</p>
+<div *ngFor="let product of cartList">
+    
+    {{product.name}}
+    <button (click)="removeItem(product)">
+		Remoe Item
+   </button>
+</div>
+<h1>Total cost is </h1>
+<h2>{{totalCost}}</h2>
